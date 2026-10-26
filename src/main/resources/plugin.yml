@@ -1,0 +1,14 @@
+name: RailGuard
+version: ${project.version}
+main: uz.railguard.RailGuard
+api-version: '1.20'
+description: Temir yolni tuzatadi, ishlatilmayotgan vagonlarni o'chiradi, atrofni moblardan himoya qiladi.
+commands:
+  railguard:
+    description: RailGuard boshqaruvi
+    usage: /railguard <scan [radius]|forget [radius]|info|reload>
+    permission: railguard.admin
+permissions:
+  railguard.admin:
+    description: RailGuard buyruqlari
+    default: op

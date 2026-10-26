@@ -1,0 +1,27 @@
+# ---- Temir yolni tuzatish ----
+repair:
+  enabled: true
+  interval-seconds: 10        # qancha vaqtda bir tekshiriladi
+  max-per-run: 100            # bir tekshiruvda maksimal tiklanadigan relslar
+  restore-support-block: true # relsning tagidagi blok yo'q bo'lsa, qayta qo'yadi
+  protect-from-explosions: true # creeper/TNT relslarni buzolmaydi
+
+# ---- Ishlatilmayotgan vagonlar ----
+minecarts:
+  cleanup-enabled: true
+  idle-seconds: 180           # shuncha vaqt qimirlamasa va ichida odam bo'lmasa o'chadi
+  player-radius: 16           # yaqinida o'yinchi bo'lsa o'chirilmaydi
+  include-special: false      # chest/hopper/tnt/furnace vagonlar (ichida narsa bo'lishi mumkin)
+  drop-item: false            # true bo'lsa o'chganda vagon item bo'lib tushadi
+
+# ---- Moblardan himoya ----
+mob-protection:
+  enabled: true
+  radius: 8                   # relsdan gorizontal masofa (blok)
+  vertical-radius: 5          # relsdan vertikal masofa (blok)
+  block-spawns: true          # relslar atrofida dushman mob paydo bo'lmaydi
+  clear-existing: true        # allaqachon turgan dushman moblarni o'chiradi
+  clear-interval-seconds: 5
+
+# ---- Skanerlash ----
+max-scan-radius: 48
