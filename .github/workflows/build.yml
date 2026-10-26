@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: '25'
       - run: mvn -B package
       - uses: softprops/action-gh-release@v2
         with:
